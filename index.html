@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linguagens de Programação Modernas</title>
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50; /* Verde */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #4CAF50; 
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 1em;
+        }
+
+        .langs {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .lang {
+            background-color: #ffffff; /* Branco */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .lang:hover {
+            transform: scale(1.05);
+        }
+
+        .lang img {
+            max-width: 80px;
+            margin-bottom: 10px;
+        }
+
+        .quiz {
+            background-color: #ffffff; /* Branco */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .quiz button {
+            background-color: #4CAF50; /* Verde */
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .quiz button:hover {
+            background-color: #45a049; /* Verde Escuro */
+        }
+
+        .links {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .link {
+            background-color: #4CAF50; /* Verde */
+            color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .link:hover {
+            background-color: #45a049; /* Verde Escuro */
+        }
+
+        @media (max-width: 768px) {
+            .link {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Linguagens de Programação Modernas</h1>
+</header>
+
+<section>
+    <h2>Principais Linguagens de Programação em 2024</h2>
+    <div class="langs">
+        <div class="lang">
+            <img src="Py.jpg" alt="Python">
+            <h3>Python</h3>
+            <p>Python é amplamente utilizada em ciência de dados, automação e desenvolvimento web. Sua sintaxe simples a torna ideal para iniciantes.</p>
+        </div>
+        <div class="lang">
+            <img src="k.jpg" alt="Kotlin">
+            <h3>Kotlin</h3>
+            <p>Uma linguagem moderna para desenvolvimento Android, Kotlin é conhecida por sua sintaxe concisa e segurança de tipos.</p>
+        </div>
+        <div class="lang">
+            <img src="java.jpg" alt="JavaScript">
+            <h3>JavaScript</h3>
+            <p>Essencial no desenvolvimento web, JavaScript permite a criação de interfaces interativas e aplicações dinâmicas.</p>
+        </div>
+        <div class="lang">
+            <img src="clin.jpg" alt="C#">
+            <h3>C#</h3>
+            <p>Desenvolvida pela Microsoft, C# é amplamente utilizada em desenvolvimento de jogos e aplicações empresariais.</p>
+        </div>
+        <div class="lang">
+            <img src="gol.jpg" alt="Go">
+            <h3>Go</h3>
+            <p>Criada pela Google, Go é ideal para sistemas escaláveis e aplicações em nuvem, com excelente suporte a concorrência.</p>
+        </div>
+        <div class="lang">
+            <img src="rust1.jpg" alt="Rust">
+            <h3>Rust</h3>
+            <p>Rust é conhecida por sua segurança e desempenho, sendo perfeita para sistemas críticos e aplicações de alto desempenho.</p>
+        </div>
+        <div class="lang">
+            <img src="sql.jpg" alt="SQL">
+            <h3>SQL</h3>
+            <p>SQL é fundamental para a manipulação de dados em bancos relacionais, permitindo realizar diversas operações sobre os dados.</p>
+        </div>
+        <div class="lang">
+            <img src="swi.jpg" alt="Swift">
+            <h3>Swift</h3>
+            <p>Desenvolvida pela Apple, Swift é usada para criar aplicativos para iOS e Mac, oferecendo uma experiência de programação intuitiva.</p>
+        </div>
+    </div>
+</section>
+
+<section class="quiz">
+    <h2>Teste seu Conhecimento</h2>
+    <div id="pergunta"></div>
+    <button onclick="checkAnswer(0)">Opção 1</button>
+    <button onclick="checkAnswer(1)">Opção 2</button>
+    <button onclick="checkAnswer(2)">Opção 3</button>
+</section>
+
+<section class="links">
+    <a href="https://www.coursera.org" class="link" target="_blank">Cursos no Coursera</a>
+    <a href="https://www.udemy.com" class="link" target="_blank">Cursos no Udemy</a>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
